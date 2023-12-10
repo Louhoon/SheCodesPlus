@@ -31,6 +31,11 @@ footer p {
   font-size: 14px;
   text-align: center;
   color: rgba(39, 33, 66, 0.4);
+  margin: 16px 0;
+}
+
+footer {
+	padding-top: 15px;
 }
 
 a {

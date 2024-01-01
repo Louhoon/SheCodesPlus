@@ -29,6 +29,14 @@ function showCurrentDateAndTime() {
   let currentHour = date.getHours();
   let currentMinutes = date.getMinutes();
 
+  if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+
+  if (currentHour < 10) {
+    currentHour = `0${currentHour}`;
+  }
+
   let dateAndTime = document.querySelector("#date-and-time");
   dateAndTime.innerHTML = `${currentDay} ${currentHour}:${currentMinutes}`;
 }

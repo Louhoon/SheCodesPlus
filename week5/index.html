@@ -1,38 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SheCodes Plus</title>
-    <meta charset="UTF-8" />
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-  </head>
+<html lang="en">
 
-  <body>
-    <img
-      src="https://8cnfjl-1234.csb.app/logo.6023b87e.png"
-      alt="SheCodes Plus Logo"
-      class="logo"
-    />
-    <h1>JavaScript Weather API</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <title>My weather application</title>
+</head>
 
-    <h3>JS Challenge 1</h3>
-    <p>Import Axios</p>
+<body>
+  <div class="container">
+    <header>
+      <form id="search-form">
+        <input autofocus="on" autocomplete="off" class="search-bar" id="search-input" type="search"
+          placeholder="Enter a city.." required />
+        <input class="search-button" type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 id="city">Paris</h1>
+          <p>
+            <span id="date-and-time">Saturday 15:32</span>, moderate rain
+            <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span><strong id="current-city-temperature">24</strong><span
+            class="current-temperature-degree">°C</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        - This project was coded by
+        <a href="https://www.linkedin.com/in/louane-voisin-anastasie42" target="_blank">Louane Voisin-Anastasie</a>
+        and is
+        <a href="https://github.com/Louhoon/SheCodesPlus/tree/main/week2" target="_blank">
+          on GitHub</a>
+        and
+        <a href="#" target="_blank">hosted on Netlify</a>
+        -
+      </p>
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
+</body>
 
-    <h3>JS Challenge 2</h3>
-    <p>Get your API key and save in a variable called apiKey</p>
-
-    <h3>JS Challenge 3</h3>
-    <p>Get the API response for the weather in Sydney, using metrics unit</p>
-
-    <h3>JS Challenge 4</h3>
-    <p>Log the current temperature in Sydney</p>
-
-    <h3>JS Challenge 5</h3>
-    <p>
-      Replace the h1 of this page with the weather in Sydney: i.e: It is 19
-      degrees in Sydney
-    </p>
-
-    <script src="src/index.js"></script>
-  </body>
 </html>

@@ -1,7 +1,7 @@
 function showSearchCity(event) {
   event.preventDefault();
   let searchCityInput = document.querySelector("#search-input");
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#city");
 
   h1.innerHTML = `${
     searchCityInput.value[0].toUpperCase() +
